@@ -15,7 +15,6 @@ function pokemonList() {
     console.log(" ")    
 }
 
-// Fetch de un Pokémon específico (por ejemplo, Pikachu)
 function PokemonInfo(pokemonName) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
         .then(response => response.json())
@@ -43,9 +42,6 @@ function PokemonInfo(pokemonName) {
         });
 }
 
-// Llamar a la función para obtener la lista de Pokémon
 pokemonList();
 
-
-// Llamar a la función para obtener la información de un Pokémon específico
-PokemonInfo("mewtwo");  // Cambia "pikachu" por el nombre del Pokémon que desees
+PokemonInfo("mewtwo");  
